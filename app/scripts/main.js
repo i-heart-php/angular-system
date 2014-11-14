@@ -8,7 +8,11 @@ require.config({
     'angular-ui-router': 'ext/angular-ui-router',
     'angularAMD': 'ext/angularAMD',
     'ngload': 'ext/ngload',
-    'angular-resource': 'ext/angular-resource'
+    'angular-resource': 'ext/angular-resource',
+    'ui-bootstrap': 'ext/ui-bootstrap',
+    'ui-bootstrap-tpls': 'ext/ui-bootstrap-tpls',
+    'jquery': 'ext/jquery',
+    'bootstrap': 'ext/bootstrap'
   },
 
   // Add angular modules that does not support AMD out of the box, put it in a shim
@@ -17,7 +21,9 @@ require.config({
     'angularAMD': [ 'angular' ],
     'ngload': [ 'angularAMD' ],
     'angular-resource': [ 'angular' ],
-    'angular-ui-router': [ 'angular' ]
+    'angular-ui-router': [ 'angular' ],
+    'ui-bootstrap-tpls': [ 'angular', 'ui-bootstrap'],
+    'bootstrap': ['jquery']
   },
 
   // kick start application
