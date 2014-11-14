@@ -1,6 +1,6 @@
 define(['common'], function (angularAMD) {
   'use strict';
-  var app = angular.module('angularAmdSample', ['ui.router', 'ngResource']);
+  var app = angular.module('angularAmdSample', ['ui.router', 'ngResource','ui.bootstrap']);
 
   app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 

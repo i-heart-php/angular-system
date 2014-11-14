@@ -32,7 +32,7 @@
     "bootstrap/fonts/glyphicons-halflings-regular.*"
   ],
   "buildFiles": [
-    "images/**", "views/**", "scripts/ext/require.js"
+    "images/**", "views/**", "partials/**", "scripts/ext/require.js"
   ]
 
 }

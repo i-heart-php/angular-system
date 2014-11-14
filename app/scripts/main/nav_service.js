@@ -20,7 +20,7 @@ define(['angularAMD'], function (angularAMD) {
     return {
       restrict: 'A',
       controller: 'navMenuController',
-      templateUrl: 'scripts/main/templates/nav.html'
+      templateUrl: 'partials/nav.html'
     };
   });
 });
