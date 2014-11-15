@@ -2,24 +2,29 @@ define(['angularAMD'], function (angularAMD) {
   'use strict';
   angularAMD.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
+
+
     $stateProvider
       .state('order.list', {
         url: '/list',
         templateUrl: 'views/order/list.html'
       })
       .state('order.edit', {
-        url: '/edit',
-        templateUrl: 'views/order/edit.html'
+        url: '/edit/{orderId:int}',
+        templateUrl: 'views/order/edit.html',
+        controller: function ($scope,$stateParams) {
+            $scope.orderId = $stateParams.orderId;
+            console.log($stateParams.orderId)
+        }
       })
       .state('order.print', {
-        url: '/ptint',
+        url: '/print',
         templateUrl: 'views/order/print.html'
-      })
-    ;
+      });
 
-    // Else -- This is not working for some reason:
-    $urlRouterProvider
-      .when('/order', '/order/list');
+      //$urlRouterProvider.when("order", "order/list");
+      
+
 
   }]);
 

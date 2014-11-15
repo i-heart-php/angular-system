@@ -1,4 +1,4 @@
-<h2>Order 1234</h2>
+<h2>Order {{orderId}}</h2>
 <div>
     <table class="table">
         <tr>
@@ -15,7 +15,9 @@
             <td><input type="number" ng:model="item.cost" ng:required class="input-mini"></td>
             <td>{{item.qty * item.cost | currency}}</td>
             <td>
-                [<a href ng:click="removeItem($index)">X</a>]
+                <div class="btn-group" role="group" aria-label="...">
+                <a href ng:click="removeItem($index)" type="button" class="btn btn-default"><i class="glyphicon glyphicon-trash"></i></a>
+                </div>
             </td>
         </tr>
         <tr>

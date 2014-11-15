@@ -33,8 +33,8 @@ define(['common'], function (angularAMD) {
     ;
 
     // Else
-    $urlRouterProvider
-      .otherwise('/login');
+
+    
 
 
   }]);
