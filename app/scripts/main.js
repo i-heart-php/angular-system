@@ -22,6 +22,7 @@ require.config({
     'ngload': [ 'angularAMD' ],
     'angular-resource': [ 'angular' ],
     'angular-ui-router': [ 'angular' ],
+    'ui-bootstrap': [ 'angular' ],
     'ui-bootstrap-tpls': [ 'angular', 'ui-bootstrap'],
     'bootstrap': ['jquery']
   },

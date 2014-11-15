@@ -5,6 +5,11 @@ define(['common'], function (angularAMD) {
   app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
     $stateProvider
+      .state('order', angularAMD.route({
+        url: '/order',
+        templateUrl: 'views/order.html',
+        controllerUrl: 'order/order_ctrl'
+      }))
       .state('home', angularAMD.route({
         url: '/home',
         templateUrl: 'views/home.html',
@@ -20,11 +25,16 @@ define(['common'], function (angularAMD) {
         templateUrl: 'views/users.html',
         controllerUrl: 'users/users_ctrl'
       }))
+      .state('login', angularAMD.route({
+        url: '/login',
+        templateUrl: 'views/login.html',
+        controllerUrl: 'scripts/login.js'
+      }))
     ;
 
     // Else
     $urlRouterProvider
-      .otherwise('/home');
+      .otherwise('/login');
 
 
   }]);
